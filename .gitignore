@@ -1,0 +1,89 @@
+# =========================================================================
+# 1. FRONTEND (React / Node.js) BAĞIMLILIKLARI VE ÇIKTILARI
+# =========================================================================
+node_modules/
+/dist
+/build
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Production / Build outputs
+*.js.map
+*.css.map
+
+# =========================================================================
+# 2. BACKEND (Node.js, Python, Java, Go, .NET, PHP vb.) GENEL ŞABLONLAR
+# =========================================================================
+# Python sanal ortamları
+venv/
+.venv/
+env/
+ENV/
+__pycache__/
+*.pyc
+
+# Java / Maven / Gradle / Spring Çıktıları
+target/
+.gradle/
+build/
+*.class
+
+# C# / .NET Çıktıları
+bin/
+obj/
+*.suo
+*.user
+
+# PHP / Composer bağımlılıkları
+vendor/
+
+# Go derleme çıktıları
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+__debug_bin
+
+# =========================================================================
+# 3. VERİTABANI (Database) DOSYALARI (SQLite, Docker MySQL/PostgreSQL vb.)
+# =========================================================================
+# Yerel SQLite veritabanları
+*.sqlite
+*.sqlite3
+*.db
+
+# Docker kalıcı veri klasörleri (Genelde yerel diskte kalmalıdır)
+.db-data/
+postgres-data/
+mysql-data/
+
+# =========================================================================
+# 4. GÜVENLİK, ORTAM DEĞİŞKENLERİ VE LOGLAR (En Kritik Bölüm)
+# =========================================================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================================================================
+# 5. EDİTÖR / IDE VE İŞLETİM SİSTEMİ KALINTILARI
+# =========================================================================
+# Visual Studio Code
+.vscode/
+!.vscode/extensions.json
+
+# JetBrains (WebStorm, IntelliJ, PyCharm vb.)
+.idea/
+
+# İşletim sistemi dosyaları
+.DS_Store
+Thumbs.db
