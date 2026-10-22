@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+pydantic
+httpx
+python-dotenv
+python-multipart
+Pillow
+numpy
+shapely
+ultralytics
+psycopg[binary]>=3.2
+PyJWT[crypto]>=2.9
