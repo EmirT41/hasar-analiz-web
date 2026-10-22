@@ -18,7 +18,7 @@
 - **Neden:** Gemini tek başına hasarın hangi parçada olduğunu zaman zaman karıştırıyordu (ör. sağ kapı yerine tavan).
 
 ### 2. Hibrit doğrulama, kaza şiddeti, PDF rapor, Docker
-- **Tarih:** 2026-10-17
+- **Tarih:**: 17.10.2026
 - **Ne istedim:** YOLO'nun eşleyemediği kutuları Gemini'nin görünen yön kuralıyla doldurması, kaza şiddeti sınıflandırması,
   PDF ekspertiz raporu, bellek optimizasyonu, Dockerfile ve canlıya alma ayarları, akademik README.
 - **Ne aldım:** `services/hibrit_dogrulama.py` (izinli parça kodları, ağırlıklı baskın taraf kuralı, şiddet puanı normalizasyonu),
