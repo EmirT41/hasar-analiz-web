@@ -25,3 +25,26 @@
   `services/gemini_service.py` (şemalı JSON, model yedekleme), `utils/ekspertizRaporu.js`, `Dockerfile`, `vercel.json`, `render.yaml`.
 - **Neyi değiştirdim:** `backend/.env` içinde kapatılan `gemini-2.5-flash` modelini `gemini-3.8-flash` ile değiştirdim. <!-- -->
 - **Neden:** Gemini'nin tek başına uydurduğu parçaları sunucu tarafında kurallarla elemek; raporu servise götürülebilir hâle getirmek.
+
+### 3. Gereksinim analizi (SRS) dokümanı
+- **Tarih:**: 26.10.2026
+- **Ne istedim:** Ders şablonuna (IEEE 830) uygun gereksinim analizi ve diyagramlar; ayrıca API kotası için önlemler ve projedeki hatalı/eksik kısımların listesi.
+- **Ne aldım:** Fonksiyonel/fonksiyonel olmayan gereksinimler, kullanım senaryoları, aktivite / sıra / veri akışı / durum /
+  kullanım durumu / sınıf / ER / mimari diyagramları ve izlenebilirlik matrisi.
+- **Neyi değiştirdim:** 
+- **Neden:**
+
+### 4. Tek hibrit Hasar Analizi, SEO ve yalnızca PostgreSQL
+- **Tarih:** 24.10.2026
+- **Ne istedim:** Menüde tek bir Hasar Analizi olması ve hibrit (YOLO + Gemini) çalışması; sitenin SEO uyumlu hâle
+  getirilmesi; risk yoksa veritabanının yalnızca PostgreSQL olması.
+- **Ne aldım:**
+  - Eski "Hasar Analizi (yalnızca Gemini)" ve "YOLO Hasar Raporu" sayfaları tek sayfada birleşti: 1–4 fotoğraf,
+    marka/model ve arıza ışıkları bağlamı, parça bazında gerekli işlemler, çok fotoğraflı PDF ve analiz geçmişi.
+  - YOLO'nun tanımadığı çamurluklar için Gemini'nin yazabileceği 4 parça kodu ve şemada karşılıkları (Leon fotoğrafında
+    hasarın "parçaya eşlenemedi" kalmasının nedeni buydu).
+  - SEO: meta/Open Graph/Twitter kartı, JSON-LD, favicon ve simgeler, manifest, robots.txt ve sitemap.xml üretimi,
+    herkese açık tanıtım bölümü, sayfa başlıkları ve kişisel sayfalarda noindex, tembel yükleme.
+  - `database.py` yalnızca PostgreSQL; bağlantı kopunca yeniden deneme; eski SQLite verisi için taşıma betiği.
+  - **Neyi değiştirdim:**: SqLite tarafını tamamen devre dışı bıraktım. PostegreSql tarafını yazdıedım. Neon.tech adresinde postegreSql gerekliliklerini kurdum.
+  - - **Neden:**: Projeyi canlıya alınca sqLite tarafı sıkıntılı olabiliyormuş. SEO isteğini ise hoca tanımladı.
